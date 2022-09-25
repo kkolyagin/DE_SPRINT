@@ -1,6 +1,5 @@
 def palindrom(a):
-    palindrom = (a.replace(' ', '') ==a.replace(' ', '')[::-1])
-    return palindrom
+    return (a.replace(' ', '') ==a.replace(' ', '')[::-1])
 
 x = ('taco cat','rotator','black cat')
 
