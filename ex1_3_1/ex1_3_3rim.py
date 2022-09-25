@@ -2,7 +2,7 @@ def renum_ar(data):
     ones = ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"]
     tens = ["", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"]
     hunds = ["", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"]
-    thous = ["", "M", "MM", "MMM", "MMMM"]
+    thous = ["", "M", "MM"]
 
     t = thous[data // 1000]
     h = hunds[data // 100 % 10]
@@ -11,10 +11,10 @@ def renum_ar(data):
 
     return t + h + te + o
 
-x = ('taco cat','rotator','black cat')
+x = (3,9,1945)
 
 for i in range(0,len(x)):
     print (f"Пример {i+1}:")
     print (f"Ввод: {x[i]}")
-    print (f"Вывод: {palindrom(x[i])}")
+    print (f"Вывод: x = {renum_ar(x[i])}")
     print()
